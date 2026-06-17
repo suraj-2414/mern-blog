@@ -9,7 +9,7 @@ const BlogPage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/data/get")
+    axios.get("https://mern-blog-backend-pify.onrender.com/api/data/get")
     .then((res) => {
       setData(res.data.blogs);
     })

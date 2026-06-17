@@ -21,7 +21,7 @@ const Signin = () => {
   }
   const subHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/api/auth/register",signinfo)
+    axios.post("https://mern-blog-backend-pify.onrender.com/api/auth/register",signinfo)
     .then((res)=>{
       console.log(res.data)
        navigate("/login");

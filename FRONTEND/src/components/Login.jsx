@@ -22,7 +22,7 @@ const Login = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/api/auth/login", loginfo, {
+    axios.post("https://mern-blog-backend-pify.onrender.com/api/auth/login", loginfo, {
         withCredentials: true,
       })
       .then((res) => {

@@ -16,7 +16,7 @@ const CreatePage = () => {
       }   
        const sub=(e)=>{
         e.preventDefault();
-           axios.post("http://localhost:3000/api/data/create",{
+           axios.post("https://mern-blog-backend-pify.onrender.com/api/data/create",{
             body:query
            })
            .then((res)=>{

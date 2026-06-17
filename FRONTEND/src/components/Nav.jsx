@@ -9,7 +9,7 @@ const Nav = () => {
     const navigate=useNavigate()
 
     const logout =()=>{
-      axios.post("http://localhost:3000/api/auth/logout",{},
+      axios.post("https://mern-blog-backend-pify.onrender.com/api/auth/logout",{},
         {
            withCredentials:true
         })
