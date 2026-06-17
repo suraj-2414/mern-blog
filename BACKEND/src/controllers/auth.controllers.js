@@ -115,7 +115,7 @@ async function refreshToken (req,res){
         })
     }
     
-    //match refreshtoken from db
+    //Match refreshtoken from DB 
     if(user.refreshToken == refreshToken){
       // generate new accessToken
     const accessToken = jwt.sign({
