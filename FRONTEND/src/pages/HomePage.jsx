@@ -18,7 +18,7 @@ const Home = () => {
      
     <div className=" min-h-screen  bg-no-repeat bg-cover bg-[url(https://images.unsplash.com/photo-1689850969062-f7e0a6c45a4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdhdnklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww)]   ">
       
-       <div className="HERO SECTION  flex justify-between w-full   pt-8 pb-12  lg:px-12 px-0 ">
+       <div className="HERO SECTION  flex justify-between w-full   pt-8   lg:px-12 px-0 ">
         <div className="LEFT PART w-1/2  md:p-13 p-6 lg:text-5xl md:text-4xl text-xl">
           <h2 className="   font-semibold tracking-wide">Discover Stories,</h2>
           <h2 className="   font-semibold tracking-wide ">ideas & thoughts</h2>

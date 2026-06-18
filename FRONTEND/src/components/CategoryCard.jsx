@@ -26,7 +26,7 @@ const CategoryCard = () => {
               setActiveCategory('Travel')  
             }}
              className='active:shadow-xl '>
-               <div className='TRAVEL relative  h-22 w-22  md:h-50 md:w-60  bg-cover bg-no-repeat   bg-center
+               <div className='TRAVEL relative  h-22 w-22  md:h-27 md:w-30 lg:h-50 lg:w-60 bg-cover bg-no-repeat   bg-center
                bg-[url(https://plus.unsplash.com/premium_vector-1718336283013-29356ed4ab39?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D)]'>
                <h5 className='  text-lg md:text-2xl absolute left-0 md:left-4 font-medium px-3'>Travel</h5>
                </div>
