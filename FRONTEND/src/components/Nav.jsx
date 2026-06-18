@@ -33,12 +33,12 @@ const Nav = () => {
 
            <div className=' DATA  h-full flex  justify-between items-center  sm:px-8  px-4'>
                <div className='    NAME  md:leading-2 leading-1'>
-                       <h1 className='md:text-3xl text-2xl font-sans font-semibold'>BlogNest</h1>
+                       <h1 className='md:text-3xl text-xl font-sans font-semibold'>BlogNest</h1>
                        <span className='md:text-sm text-xs '>where simple ideas live</span>
               </div>  
 
-              <div className='   MENU    flex gap-12 md:text-xl text-sm justify-end mt-32'>     
-                               <div className={`${count !==2 ?'hidden':'flex' } gap-12 text-xl   justify-end`}>
+              <div className='   MENU    flex gap-4 md:gap-12 md:text-xl text-sm  justify-end mt-20'>     
+                               <div className={`${count !==2 ?'hidden':'flex' } gap-4 md:gap-12 md:text-xl text-sm  justify-end`}>
                                 <Link to='/'>Home</Link>
                                 <Link to='/blog'>Blogs</Link>
                                 <Link to='/create'>Create </Link>

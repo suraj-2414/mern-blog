@@ -11,7 +11,7 @@ const Home = () => {
   // console.log("count --->", count);
   return (
      
-    <div className=" h-full  bg-no-repeat bg-cover bg-[url(https://images.unsplash.com/photo-1689850969062-f7e0a6c45a4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdhdnklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww)]   ">
+    <div className=" min-h-screen  bg-no-repeat bg-cover bg-[url(https://images.unsplash.com/photo-1689850969062-f7e0a6c45a4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdhdnklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww)]   ">
       
        <div className="HERO SECTION  flex justify-between w-full   pt-8 pb-12  lg:px-12 px-0 ">
         <div className="LEFT PART w-1/2  md:p-13 p-6 lg:text-5xl md:text-4xl text-xl">
@@ -20,7 +20,7 @@ const Home = () => {
           <span className="   text-zinc-700  lg:text-lg md:text-lg  text-[10px] leading-1">
             Read and Write Blogs that Matters.
           </span>
-          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-12 gap-4 py-6`   }>
+          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-12 gap-4 py-6 `   }>
             <Link to="/signIn">
               <button className=" whitespace-nowrap px-6  py-2 lg:px-5 lg:py-2  text-sm md:text-lg lg:text-xl  font-medium text-black bg-[#60b6ad] rounded-4xl active:scale-95">
                 Sign up
@@ -33,15 +33,15 @@ const Home = () => {
             </Link>
           </div>
           <div
-            className={` BUTTONS  ${count !== 2 ? "hidden" : "flex"} gap-4 mt-4`}
+            className={` BUTTONS  ${count !== 2 ? "hidden" : "flex"} gap-4 mt-12 lg:mt-6`}
           >
             <Link to="/blog">
-              <button className="px-4 text-xl py-2 border rounded-3xl font-semibold active:scale-95 text-black bg-[#60b6ad] ">
+              <button className="whitespace-nowrap px-4  py-2 lg:px-4 lg:py-2 text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-black bg-[#60b6ad] ">
                 Start Reading
               </button>
             </Link>
             <Link to="/create">
-              <button className="px-4 text-xl py-2 border rounded-3xl font-semibold active:scale-95 text-white bg-zinc-700 ">
+              <button className="whitespace-nowrap px-4  py-2 lg:px-4 lg:py-2  text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-white bg-zinc-700 ">
                 Write a Blog
               </button>
             </Link>
@@ -57,10 +57,10 @@ const Home = () => {
         className={`  HIDE PART ${count !== 2 ? "hidden" : "flex"}  flex-col`}
       >
         <div className="FEATURED SECTION  ">
-          <h1 className="text-4xl px-32 py-2  font-medium backdrop-blur-xs  border border-white/40 bg-white/20 shadow-xl  ">
+          <h1 className=" text-xl md:text-2xl lg:text-4xl  px-4 md:px-12 lg:px-32 py-2  font-medium backdrop-blur-xs  border border-white/40 bg-white/20 shadow-xl  ">
             Featured Blogs
           </h1>
-          <div className="py-20  ">
+          <div className=" py-8 md:py-16 lg:py-20  ">
             <Link to="/blog">
               <BlogCard />
             </Link>
