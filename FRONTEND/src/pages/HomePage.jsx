@@ -17,17 +17,17 @@ const Home = () => {
         <div className="LEFT PART w-1/2  md:p-13 p-6 lg:text-5xl md:text-4xl text-xl">
           <h2 className="   font-semibold tracking-wide">Discover Stories,</h2>
           <h2 className="   font-semibold tracking-wide ">ideas & thoughts</h2>
-          <span className="text-zinc-700  lg:text-lg md:text-lg  text-[10px] leading-1">
+          <span className="   text-zinc-700  lg:text-lg md:text-lg  text-[10px] leading-1">
             Read and Write Blogs that Matters.
           </span>
-          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-12  py-6`   }>
+          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-12 gap-4 py-6`   }>
             <Link to="/signIn">
-              <button className="px-5 py-2  text-xl  font-medium text-black bg-[#60b6ad] rounded-4xl active:scale-95">
+              <button className=" whitespace-nowrap px-6  py-2 lg:px-5 lg:py-2  text-sm md:text-lg lg:text-xl  font-medium text-black bg-[#60b6ad] rounded-4xl active:scale-95">
                 Sign up
               </button >
             </Link>
             <Link to="/login">
-              <button className="px-6 py-2  text-xl  font-medium text-[#60b6ad] bg-[#151514] rounded-4xl active:scale-95">
+              <button className="whitespace-nowrap px-6  py-2 lg:px-5 lg:py-2  text-sm  md:text-lg lg:text-xl    font-medium text-[#60b6ad] bg-[#151514] rounded-4xl active:scale-95">
                 Log in 
               </button >
             </Link>
