@@ -7,7 +7,12 @@ import { DisplayerContext, useDisplayContext } from "../context/DisplayContext";
 const Home = () => {
   // const{count} = useContext(DisplayerContext)
   const { count } = useDisplayContext();
-
+  const gitHub = ()=>{
+    window.open("https://github.com/suraj-2414","_blank")
+  }
+  const email = ()=>{
+    window.location.href="mailto:sk0171852@gmail.com"
+  }
   // console.log("count --->", count);
   return (
      
@@ -67,10 +72,10 @@ const Home = () => {
           </div>
         </div>
         <div className="CATEGORY SECTION  ">
-          <h2 className="text-4xl px-32 py-3  font-medium backdrop-blur-xs  border border-white/40 bg-white/20 shadow-xl  ">
+          <h2 className="text-xl md:text-2xl lg:text-4xl  px-4 md:px-12 lg:px-32 py-2   font-medium backdrop-blur-xs  border border-white/40 bg-white/20 shadow-xl  ">
             Explored by Category
           </h2>
-          <div className="py-14  ">
+          <div className=" py-10  md:py-14  ">
             <CategoryCard />
           </div>
         </div>
@@ -78,25 +83,24 @@ const Home = () => {
           className="FOOTER SECTION  border   bg-no-repeat bg-cover bg-center 
            bg-[url(https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGFya3xlbnwwfHwwfHx8MA%3D%3D)] "
         >
-          <div className="flex flex-col mt-6 justify-center gap-3 items-center">
-            <h3 className="text-white text-4xl font-medium ">
+          <div className="flex flex-col mt-2 md:mt-6 justify-center gap-3 items-center">
+            <h3 className="text-white text-xl md:text-4xl font-medium ">
               Have a story to tell ?
             </h3>
-            <h4 className="text-white text-4xl font-medium">
+            <h4 className="text-white text-2xl md:text-4xl font-medium">
               Start writing on BlogNest today.
             </h4>
             <Link to="/create">
-              <button className=" bg-[#60b6ad] active:scale-105 font-medium text-xl px-4 py-2 rounded-3xl my-6">
+              <button className=" bg-[#60b6ad] active:scale-105 font-medium text-sm md:text-xl px-4 py-2 rounded-3xl my-6">
                 Create Your First Blog
               </button>
             </Link>
           </div>
-          <div className="bg-black/50 px-20 py-3 flex justify-between ">
-            <h4 className="text-white text-xl">BlogNest @ 2026</h4>
-            <div className="text-white flex  gap-8 text-lg">
-              <span>About </span>
-              <span> Contact</span>
-              <span> Github</span>
+          <div className="bg-black/50 px-6 md:px-20 py-3 flex justify-between ">
+            <h4 className="text-white text-sm md:text-xl">BlogNest@2026</h4>
+            <div className="text-white flex  gap-8 text-sm md:text-lg">
+              <button onClick={email}> Contact </button> 
+              <button onClick={gitHub}> Github</button>
             </div>
           </div>
         </div>

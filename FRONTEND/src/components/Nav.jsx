@@ -24,20 +24,18 @@ const Nav = () => {
       navigate("/")
     }
   return (
-    <div className='h-full w-full relative text-white flex justify-center  '>
+    <div className='h-full w-full relative text-white flex   '>
       
       <img src="/blog-app-img.jpg" alt='img' className=' md:h-[30vh] h-[19vh] ' />
        
-      <div className="    OVERLAY-DIV   w-full  absolute inset-0 bg-linear-to-b from-black/20 via-black/50 to-black/80">
+      <div className="    OVERLAY-DIV flex flex-col justify-center gap-4 md:gap-10  w-full  absolute inset-0 bg-linear-to-b from-black/20 via-black/50 to-black/80">
 
-
-           <div className=' DATA  h-full flex  justify-between items-center  sm:px-8  px-4'>
-               <div className='    NAME  md:leading-2 leading-1'>
+          <div className=' DATA   items-center md:mt-8 sm:px-8  px-4 md:leading-2 leading-1'>     
                        <h1 className='md:text-3xl text-xl font-sans font-semibold'>BlogNest</h1>
                        <span className='md:text-sm text-xs '>where simple ideas live</span>
-              </div>  
+          </div>
 
-              <div className='   MENU    flex gap-4 md:gap-12 md:text-xl text-sm  justify-end mt-20'>     
+          <div className='   MENU   flex gap-4 md:gap-12 md:text-xl text-sm  px-2 md:px-5 justify-end '>     
                                <div className={`${count !==2 ?'hidden':'flex' } gap-4 md:gap-12 md:text-xl text-sm  justify-end`}>
                                 <Link to='/'>Home</Link>
                                 <Link to='/blog'>Blogs</Link>
@@ -51,7 +49,7 @@ const Nav = () => {
                                    <Link to='/'>Log Out</Link> 
                                </button>      
               </div>
-           </div>
+           
       </div>
     </div>
   )
