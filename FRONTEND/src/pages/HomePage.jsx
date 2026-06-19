@@ -25,14 +25,14 @@ const Home = () => {
           <span className="   text-zinc-700  lg:text-lg md:text-lg  text-[10px] leading-1">
             Read and Write Blogs that Matters.
           </span>
-          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-12 gap-4 py-6 `   }>
+          <div className={ `SIGN-UP/Login   ${count == 0 ? "flex" : "hidden"} justify-evenly mx-20 md:mx-12 gap-8 md:gap-0 py-8 md:py-6 `   }>
             <Link to="/signIn">
-              <button className=" whitespace-nowrap px-6  py-2 lg:px-5 lg:py-2  text-sm md:text-lg lg:text-xl  font-medium text-black bg-[#60b6ad] rounded-4xl active:scale-95">
+              <button className=" whitespace-nowrap px-4  py-2 md:px-5 md:py-2  text-sm md:text-lg lg:text-xl  font-medium text-black bg-[#60b6ad] rounded-2xl md:rounded-4xl active:scale-95">
                 Sign up
               </button >
             </Link>
             <Link to="/login">
-              <button className="whitespace-nowrap px-6  py-2 lg:px-5 lg:py-2  text-sm  md:text-lg lg:text-xl    font-medium text-[#60b6ad] bg-[#151514] rounded-4xl active:scale-95">
+              <button className="whitespace-nowrap px-4  py-2 md:px-5 md::py-2  text-sm  md:text-lg lg:text-xl    font-medium text-[#60b6ad] bg-[#151514] rounded-2xl md:rounded-4xl active:scale-95">
                 Log in 
               </button >
             </Link>
@@ -41,19 +41,19 @@ const Home = () => {
             className={` BUTTONS  ${count !== 2 ? "hidden" : "flex"} gap-4 mt-12 lg:mt-6`}
           >
             <Link to="/blog">
-              <button className="whitespace-nowrap px-4  py-2 lg:px-4 lg:py-2 text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-black bg-[#60b6ad] ">
+              <button className="whitespace-nowrap px-4  py-2 md:px-4 lg:py-2 text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-black bg-[#60b6ad] ">
                 Start Reading
               </button>
             </Link>
             <Link to="/create">
-              <button className="whitespace-nowrap px-4  py-2 lg:px-4 lg:py-2  text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-white bg-zinc-700 ">
+              <button className="whitespace-nowrap px-4  py-2 md:px-4 lg:py-2  text-xs sm:text-sm md:text-lg lg:text-xl  border rounded-3xl font-semibold active:scale-95 text-white bg-zinc-700 ">
                 Write a Blog
               </button>
             </Link>
           </div>
         </div>
         <div
-          className=" RIGHT PART lg:h-90 lg:w-90 md:h-80  md:w-80 sm:h-48 sm:w-48  h-36 w-38 md:mt-2  mt-7 md:mr-14 mr-8  bg-[url(https://plus.unsplash.com/premium_vector-1721296174014-8cdae5be292b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8)] 
+          className=" RIGHT PART lg:h-90 lg:w-90 md:h-80  md:w-80 sm:h-48 sm:w-48  h-36 w-38 md:mt-2  mt-2 md:mr-14 mr-8  bg-[url(https://plus.unsplash.com/premium_vector-1721296174014-8cdae5be292b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8)] 
             rounded-full bg-cover bg-no-repeat rotate-y-180"
         ></div>
       </div>

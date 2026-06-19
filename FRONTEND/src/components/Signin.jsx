@@ -47,7 +47,7 @@ const Signin = () => {
       
       <form
         onSubmit={subHandler}
-        className={` flex flex-col text-xl gap-4 px-6 py-10 rounded-xl border-2 border-black/50 bg-white/20 backdrop-blur-xs    `}
+        className={` flex flex-col items-center text-xl gap-4 px-2 py-6 md:px-6 md:py-10  rounded-xl border-2 border-black/50 bg-white/20 backdrop-blur-xs    `}
       >
        
         <span className="flex justify-center">
@@ -66,7 +66,7 @@ const Signin = () => {
           onKeyDown={handleEnter}
           value={signinfo.username}
           placeholder="Enter Username"
-          className=" border rounded px-3 py-1 outline-none"
+          className=" border rounded w-3/4 md:w-full text-lg  px-2 py-0.5 md:px-5 md:py-1 outline-none"
         />
         <input
           required
@@ -77,13 +77,13 @@ const Signin = () => {
           onChange={handleInput}
           value={signinfo.password}
           placeholder="Enter Password"
-          className=" border rounded px-3 py-1 outline-none"
+          className=" border rounded  w-3/4 md:w-full text-lg  px-2 py-0.5 md:px-5 md:py-1 outline-none"
         />
         <button
           // onClick={() => {
           //   navigate("/login");
           // }}
-          className=" border rounded my-4 px-3 py-1  active:scale-95"
+          className=" border rounded my-4  w-3/4 md:w-full  bg-[#48d3c5]  font-semibold text-lg  px-2 py-0.5 md:px-5 md:py-1 outline-none  active:scale-95"
         >
           Sign up
         </button>

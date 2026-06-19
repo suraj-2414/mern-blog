@@ -52,7 +52,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col  justify-center items-center w-full pb-12 bg-no-repeat bg-cover bg-[url(https://plus.unsplash.com/premium_photo-1764687752846-9f2d008c97f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzNnxpVUlzblZ0akIwWXx8ZW58MHx8fHx8)]">
+    <div className=" flex flex-col  justify-center items-center w-full pb-12  bg-no-repeat bg-cover bg-[url(https://plus.unsplash.com/premium_photo-1764687752846-9f2d008c97f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzNnxpVUlzblZ0akIwWXx8ZW58MHx8fHx8)]">
       <h1
         className={`${count == 1 ? "flex" : "hidden"} mt-1  gap-2  font-semibold text-xl`}
       >
@@ -67,17 +67,17 @@ const Login = () => {
 
       <form
         onSubmit={submitHandler}
-        className={`flex   flex-col gap-4 rounded-xl text-xl  px-6 py-10 border-2 border-black/50 bg-white/20 backdrop-blur-xs m-4   `}
+        className={`flex   flex-col items-center gap-4 rounded-xl  px-2 py-6 md:px-6 md:py-10 border-2 border-black/50 bg-white/20 backdrop-blur-xs m-4   `}
       >
         <span className="flex justify-center">
-          <Handshake className="w-14 h-14" strokeWidth={1.25} />
+          <Handshake className=" w-10 h-10 md:w-14 md:h-14" strokeWidth={1.25} />
         </span>
 
         <input
           onChange={handleInput}
           value={loginfo.username}
           name="username"
-          className=" border rounded px-3 py-1 outline-none"
+          className=" border rounded w-3/4 md:w-full text-lg  px-2 py-0.5 md:px-5 md:py-1 outline-none"
           type="text"
           placeholder="Enter Username"
           spellCheck="false"
@@ -89,17 +89,17 @@ const Login = () => {
           onChange={handleInput}
           value={loginfo.password}
           name="password"
-          className=" border rounded px-3 py-1 outline-none "
+          className=" border rounded w-3/4 md:w-full text-lg  px-2 py-0.5 md:px-5 md:py-1 outline-none "
           type="password"
           placeholder="Enter Password"
           ref={passref}
         />
-        <button className=" border rounded my-4 px-3 py-1   active:scale-95">
+        <button className=" border rounded my-4 px-3 py-1 w-3/4 bg-[#48d3c5]  font-semibold text-lg md:w-full  active:scale-95">
           {btn}
         </button>
-        <Link className="font-semibold text-xl" to="/signIn">
+        <Link className="font-semibold text-lg md:text-xl" to="/signIn">
           Don't have an Account ?
-          <span className=" text-blue-800 cursor-pointer">Sign In</span>
+          <span className=" text-blue-800 cursor-pointer"> Sign In</span>
         </Link>
       </form>
     </div>
