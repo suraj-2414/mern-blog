@@ -33,14 +33,14 @@ const BlogPage = () => {
                 setActiveCategory(elem);
               }}
               key={idx}
-              className={`${activeCategory === elem ? "bg-[#60b6ad]" : "bg-transparent"} px-4  py-1 rounded-xl border-2 active:scale-95 transition border-black/30 font-semibold  hover:border-[#60b6ad] text-xl`}
+              className={`${activeCategory === elem ? "bg-[#60b6ad]" : "bg-transparent"} px-2 py-0.5 md:px-4  md:py-1 rounded-3xl md:rounded-xl border-2 active:scale-95 transition border-black/30 font-semibold  hover:border-[#60b6ad] text-lg md:text-xl`}
             >
               {elem}
             </button>
           );
         })}
       </div>
-      <div className="grid grid-cols-3 gap-4  px-2 py-4  ">
+      <div className="grid grid-cols-2  md:grid-cols-3 gap-2 md:gap-4  px-2 py-4  ">
         {fdata.map(function (item, idx) {
           return (
             <div key={idx}>
